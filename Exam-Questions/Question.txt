@@ -1,0 +1,30 @@
+Encrypting a code [NCR 2 oct]
+----------------
+
+Given a from [A-Z] string find the no coloumn occurance in excel sheet. in sorted manaer
+
+i.e.
+Input : A
+Output: 1
+
+Input : AA
+Output: 27
+-------------------------
+Testcase 1:
+
+    Input : AZ BA P
+
+    Output: 535216
+-------------------------
+Ans:
+
+Use Bin to Decimal conversion technique
+i.e.
+
+1001    => 2^3*(1) + 2^2*(0) + 2^1*(0) + 2^0*(1)
+
+similary
+
+AA      => 26^1*(1) + 26^0*(1)   => 27
+AZ      => 26^1*(1) + 26^0*(26)  => 52
+BA      => 26^1*(2) + 26^0*(1)   => 53
