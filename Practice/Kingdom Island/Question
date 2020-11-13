@@ -1,0 +1,27 @@
+An architect prepares the map of a kingdom. He maps the kingdom in the form of N*M grid.
+The kingdom consist of various islands the king declares the island with the largest ares
+as the capital of the kingdom. A land is represented as 1 and an area filled with water is
+represented as 0. The cluster of the horizontal and verticle adjecent cell consisting of 1 is
+recognized as an island Diagonally placed cells with value 1 do not to belong to the same
+island. The area of the island is the number if 1s it spans.
+
+Write a algorithm to find the area of the island which is declared as the capital of the kingdom.
+
+Input 
+First line of the input consist of two space-separated integers -rows(N) and columns(M),
+respresenting the number of rows and number of columns.
+The next N lines consist of M space separated integers respresenting the two dimentional integer grid
+
+Output
+Print an integer respresenting the area of the island which is declared as the capital of the kingdom
+
+Example 
+Input:
+4 4
+1 0 1 1
+0 0 1 0
+1 0 1 1
+1 0 1 1
+
+Output:
+7
