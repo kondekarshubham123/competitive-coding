@@ -25,3 +25,14 @@ def countChar(str, char):
         return countChar(str[1:], char)
 
 print(countChar("abacada", 'a'))
+
+#########
+def fib(n):
+    '''
+    You can call helper function as fib_(n-1) and fib_(n-2)
+    '''
+    if n==0 or n==1:
+      return n
+    return fib(n-1) + fib(n-2)
+    
+print(fib(12))
