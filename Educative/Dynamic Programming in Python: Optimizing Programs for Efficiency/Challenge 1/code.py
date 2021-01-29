@@ -34,5 +34,22 @@ def fib(n):
     if n==0 or n==1:
       return n
     return fib(n-1) + fib(n-2)
-    
+
 print(fib(12))
+#--------------------------------
+####
+#### Permutation Using Recursion
+def permutations(str):
+    if str == "":
+        return [""]
+    
+    permutes = []
+    for char in str:
+        subpermutes = permutations(str.replace(char,"",1))
+        for each in subpermutes:
+            permutes.append(char+each)
+    return permutes
+
+print(permutations("abc"))
+
+#Time Complexity: O(n!)
